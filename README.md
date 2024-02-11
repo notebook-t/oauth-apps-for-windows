@@ -11,6 +11,61 @@ When doing an OAuth 2.0 Authorization flow to Google in a native application, it
 is important to follow 
 [best practices](https://tools.ietf.org/html/rfc8252), 
 which require using the browser (and not an embedded browser).
+```
+ {
+  "user_id": "",
+  "name": {
+    "first_name": "",
+    "last_name": "",
+    "middle_name": ""
+  },
+  "Emails": [
+    {
+      "email": "",
+      "email_id": "",
+      "verification_status": ""
+    }
+  ],
+  "password": "",
+  "telephone_numbers": [],
+  "Status": "Active",
+  "Providers": [
+    {
+      "local_id": "",
+      "oauth_user_record_id": "",
+      "profile_picture_url": "",
+      "provider_subject": "",
+      "provider_type": ""
+    }
+  ],
+  "totps": [],
+  "crypto_wallets": [],
+  "created_at": "",
+  "registros_biométricos": [],
+  "metadatos_de_trust": {},
+  "metadatos_no_trustworthy": {},
+  "webauthn_registrations": [
+    {
+      "credential_id": "webauthn-registration-1",
+      "public_key": "public-key-1",
+      "sign_count": 1,
+      "user_handle": "user-handle-1"
+    },
+    {
+      "credential_id": "webauthn-registration-2",
+      "public_key": "public-key-2",
+      "sign_count": 2,
+      "user_handle": "user-handle-2"
+    },
+    {
+      "credential_id": "webauthn-registration-3",
+      "public_key": "public-key-3",
+      "sign_count": 3,
+      "user_handle": "user-handle-3"
+    }
+  ]
+}
+```
 
 These samples show how to complete an OAuth 2.0 Authorization request in a
 traditional app, where a loopback redirect is used to received the code, and in
